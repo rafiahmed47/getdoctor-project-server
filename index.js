@@ -23,10 +23,13 @@ async function run() {
     const appointments = database.collection('appointments');
     const userCollection = database.collection('user')
     const doctorsCollection = database.collection('doctors')
+    
+
 
     app.get('/', (req, res) =>{
       res.send('hello world')
     })
+
     
     // GET APPOINTMENTS 
     app.get('/appointment', async (req, res) =>{
